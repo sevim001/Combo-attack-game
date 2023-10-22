@@ -1,0 +1,94 @@
+
+@font-face {
+  font-family: press-start;
+  src: url("fonts/PressStart2P-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  font-family: press-start;
+}
+body{
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: #241527;
+}
+.enemy-health1 {
+  position: relative;
+  width: 100%;
+  border: 4PX  solid white;
+  border-left: 0PX ;
+
+  border-radius: 5PX;
+}
+
+.player-health1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  border: 4PX solid white;
+  border-radius: 5PX;
+  border-right: 0PX ;
+}
+.player-health,
+.enemy-health {
+  background-color: red;
+  height: 30px;
+  width: 100%;
+}
+
+.enemy-health2  {
+  position: absolute;
+  background-color: #818CF8;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.player-health2  {
+  position: absolute;
+  background-color: #818CF8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.red-container {
+  position: relative;
+  display: inline-block;
+}
+.second-red-container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+.timer {
+  background-color: rgba(0, 0, 0, 0.676);
+  width: 100px;
+  height: 70px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10PX;
+  font-family: press-start;
+}
+
+.tie {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  
+}
